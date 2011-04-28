@@ -1,18 +1,21 @@
 /* $Id: custom.css,v 1.0 2011/04/28 Custom CSS $ */
 
 #sidebar-first {
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #000;
+}
+
+#views_slideshow_cycle_main_app_slideshow-block_1 {
+  background-image:url('images/custom/phone_shell.png');
+  background-repeat:no-repeat;
+  background-position:top;
+  padding-top:56px;
+  padding-left:35px;
+  min-height: 580px;
 }
 
 #block-views-qrcode-block {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-right: 10px;
+  text-align: center;
 }
 
-.field-name-field-logo {
+.field-name-field-watermark {
   text-align: right;
 }
