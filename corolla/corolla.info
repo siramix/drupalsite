@@ -13,6 +13,8 @@ features[] = node_user_picture
 features[] = comment_user_picture
 features[] = favicon
 
+; adding a custom stylesheet for all media
+stylesheets[all][]   = custom.css
 stylesheets[all][]   = base.css
 stylesheets[all][]   = style.css
 stylesheets[all][]   = colors.css

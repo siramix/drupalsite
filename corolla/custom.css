@@ -1,1 +1,18 @@
 /* $Id: custom.css,v 1.0 2011/04/28 Custom CSS $ */
+
+#sidebar-first {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+#block-views-qrcode-block {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.field-name-field-logo {
+  text-align: right;
+}
