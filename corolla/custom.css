@@ -14,6 +14,7 @@
 #sidebar-first {
 }
 
+/* ------- Slideshow ---------- */
 /*Block for app slideshows.  Shows on app main and sub pages. */
 #views_slideshow_cycle_main_app_slideshow-block_1 {
   background-image:url('images/custom/phone_shell.png');
@@ -26,6 +27,21 @@
   margin-left: -20px;
 }
 
+/* Pager
+Each page of the slideshow renders a text number below the phone.
+This text number is shifted off screen and in its place goes the 
+scroll bullet icon.  This allows us to reuse the image instead of
+attaching a new one for eveyr single screenshot. 
+http://stackoverflow.com/questions/471510/hide-text-using-css
+*/
+.views-content-field-screenshot-order {
+    text-indent: -9999px;                 
+    background-image:url('../../sites/default/files/screenshots/scrollbullet.png');  
+    height:15px;                       
+    width:15px;
+}
+
+/* -------- QR COde ------------ */
 #block-views-qrcode-block {
   text-align: center;
 }
