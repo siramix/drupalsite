@@ -1,15 +1,29 @@
 /* $Id: custom.css,v 1.0 2011/04/28 Custom CSS $ */
 
+/*================================================================
+					General Site Styles
+================================================================*/
+#header-wrapper{
+  max-height: 8px;
+  background-color: #6e9ec4;
+}
+
+/*================================================================
+					App Content Styles
+================================================================*/
 #sidebar-first {
 }
 
+/*Block for app slideshows.  Shows on app main and sub pages. */
 #views_slideshow_cycle_main_app_slideshow-block_1 {
   background-image:url('images/custom/phone_shell.png');
   background-repeat:no-repeat;
   background-position:top;
-  padding-top:56px;
-  padding-left:35px;
+  padding-top:57px;
+  padding-left:54px;
   min-height: 580px;
+  min-width: 300px;
+  margin-left: -20px;
 }
 
 #block-views-qrcode-block {
