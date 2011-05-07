@@ -8,13 +8,19 @@
   background-color: #6e9ec4;
 }
 
+.field-name-field-watermark {
+  text-align: right;
+}
+
 /*================================================================
 					App Content Styles
 ================================================================*/
 #sidebar-first {
 }
 
-/* ------- Slideshow ---------- */
+/*==============
+    Slideshow
+================*/	
 /*Block for app slideshows.  Shows on app main and sub pages. */
 #views_slideshow_cycle_main_app_slideshow-block_1 {
   background-image:url('images/custom/phone_shell.png');
@@ -81,11 +87,20 @@ http://stackoverflow.com/questions/471510/hide-text-using-css
 }
 
 
-/* -------- QR COde ------------ */
-#block-views-qrcode-block {
-  text-align: center;
+/*==============
+    QR Code
+================*/	
+#block-views-qr-code-blocks-block-1 {
+  text-align:center;
 }
 
-.field-name-field-watermark {
-  text-align: right;
+.QRCode img{
+  padding:5px;
+  background-color: white;
+  border:1px solid #e1e1e1;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.QRCaption {
 }
