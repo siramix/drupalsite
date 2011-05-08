@@ -59,6 +59,11 @@
 /*==============
     Branding
 ================*/	
+/* shrink our main title */
+#site-name {
+  font-size: 3em;
+}
+
 /* position the logo and modo above everything */
 #branding-wrapper {
   padding: 15px 0px 10px 5px;
