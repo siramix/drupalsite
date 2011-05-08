@@ -3,11 +3,72 @@
 /*================================================================
 					General Site Styles
 ================================================================*/
-#header-wrapper{
-  max-height: 8px;
-  background-color: #6e9ec4;
+
+/*==============
+    Main Menu
+================*/	
+/* set the main menu below the branding */
+#header-menu-wrapper {
+  margin-top: 170px;
+  background-color: #f8f8f8;
+} 
+
+/* this element is not filled with anything */
+#header {
+  min-height: 7px;  
 }
 
+/* all menu links */
+#header-menu a {
+  background-color: #4f4f4f;
+  -moz-border-radius: 5px; /*firefox workaround*/
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* active top level menu item (unexpanded) */
+#header-menu a.active {
+  background-color: #5a7d99;
+}
+
+/* links under expanded menu (and parent link) */
+#header-menu .content ul li.expanded.active-trail a.active-trail{
+  background-color: #5a7d99;  
+  color: white;
+}
+
+/* submenu item currently active */
+#header-menu .content ul li.expanded.active-trail a.active{
+  background-color: #5a7d99;  
+  color: white;
+}
+
+/* sub menus */
+#header-menu ul ul a {
+  background-color: #4f4f4f;
+  -moz-border-radius: 0px; /*firefox workaround*/
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+/*==============
+    Branding
+================*/	
+/* position the logo and modo above everything */
+#branding-wrapper {
+  padding: 15px 0px 10px 5px;
+  position: absolute;
+  position: top;
+  margin-top: -200px;
+}
+
+/*==============
+    Misc Content
+================*/	
+/* hide breadcrumbs */
+.breadcrumb {display:none;}
+
+/* when content has watermark put it on right side */
 .field-name-field-watermark {
   text-align: right;
 }
@@ -23,11 +84,11 @@
 ================*/	
 /*Block for app slideshows.  Shows on app main and sub pages. */
 #views_slideshow_cycle_main_app_slideshow-block_1 {
-  background-image:url('images/custom/phone_shell.png');
-  background-repeat:no-repeat;
-  background-position:top;
-  padding-top:57px;
-  padding-left:54px;
+  background-image: url('images/custom/phone_shell.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 57px;
+  padding-left: 54px;
   min-height: 580px;
   min-width: 300px;
   margin-left: -20px;
@@ -43,15 +104,15 @@ Also see for centering... http://tinyurl.com/66yugf
 
 /* surrounds entire paging widget (outermost block) */
 .views-slideshow-controls-bottom {
-  position:relative;     
-  margin-top:-50px;
-  float:left;
+  position: relative;     
+  margin-top: -50px;
+  float: left;
   width: 100%;
 }
 
 /* block of pages (2nd outermost block) */
 #widget_pager_bottom_app_slideshow-block_1 { 
-  width:200px; /*this is needed to flatten the page icons horizontally*/ 
+  width: 200px; /*this is needed to flatten the page icons horizontally*/ 
   
   /*cutting corners, hard codinging position to avoid centering difficulty*/
   padding-left: 33%;  
@@ -59,15 +120,15 @@ Also see for centering... http://tinyurl.com/66yugf
 
 /* third level block around pages (3rd outermost) */
 .views-slideshow-pager-fields-render {
-  float:left;  
-  overflow:hidden;    
+  float: left;  
+  overflow: hidden;    
 }
 
 /* wrapper for bullets */
 .views-field-field-screenshot-order {
-  float:left;		/*flatten bullets*/
-  margin-left:5px;
-  margin-right:5px;
+  float: left;		/*flatten bullets*/
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* bullet icon 
@@ -75,30 +136,30 @@ Text hidden using following technique
 http://stackoverflow.com/questions/471510/hide-text-using-css
 */
 .views-content-field-screenshot-order {
-  text-indent:-9999px;                 
-  background-image:url('../../sites/default/files/screenshots/scrollbullet.png');    
-  height:13px;                       
-  width:13px;    
-  cursor:pointer;        
+  text-indent: -9999px;                 
+  background-image: url('../../sites/default/files/screenshots/scrollbullet.png');    
+  height: 13px;                       
+  width: 13px;    
+  cursor: pointer;        
 }
 
 .views-content-field-screenshot-order:hover {
-  background-image:url('../../sites/default/files/screenshots/scrollbullet_select.png');  
+  background-image: url('../../sites/default/files/screenshots/scrollbullet_select.png');  
 }
-
 
 /*==============
     QR Code
 ================*/	
 #block-views-qr-code-blocks-block-1 {
-  text-align:center;
+  text-align: center;
+  margin-top: -30px;
 }
 
 .QRCode img{
-  padding:5px;
+  padding: 5px;
   background-color: white;
   border:1px solid #e1e1e1;
-  -moz-border-radius: 5px;
+  -moz-border-radius: 5px; /*firefox workaround*/
   border-radius: 5px;
 }
 

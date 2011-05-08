@@ -14,11 +14,11 @@ features[] = comment_user_picture
 features[] = favicon
 
 ; adding a custom stylesheet for all media
-stylesheets[all][]   = custom.css
 stylesheets[all][]   = base.css
 stylesheets[all][]   = style.css
 stylesheets[all][]   = colors.css
 stylesheets[print][] = print.css
+stylesheets[all][]   = custom.css
 
 regions[header_menu]    = Header menu
 regions[footer_menu]    = Footer menu
