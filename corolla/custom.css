@@ -9,13 +9,18 @@
 ================*/	
 /* set the main menu below the branding */
 #header-menu-wrapper {
-  margin-top: 170px;
-  background-color: #f8f8f8;
+  background-color: transparent;
+  margin-right: 300px;
+  margin-top: 50px;
+  position: absolute;
 } 
+
+#header-menu .content ul {
+  float: right;
+}
 
 /* this element is not filled with anything */
 #header {
-  min-height: 7px;  
 }
 
 /* all menu links */
@@ -32,8 +37,8 @@
 }
 
 /* links under expanded menu (and parent link) */
-#header-menu .content ul li.expanded.active-trail a.active-trail{
-  background-color: #5a7d99;  
+#header-menu .content ul li.expanded.active-trail a.active-trail{ 
+  background-color: #7f7f7f;
   color: white;
 }
 
@@ -57,9 +62,10 @@
 /* position the logo and modo above everything */
 #branding-wrapper {
   padding: 15px 0px 10px 5px;
-  position: absolute;
-  position: top;
-  margin-top: -200px;
+}
+
+#header-wrapper {
+  background-color: #efefef;
 }
 
 /*==============
