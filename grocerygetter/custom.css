@@ -9,14 +9,9 @@
 ================*/	
 /* set the main menu below the branding */
 #header-menu-wrapper {
-  background-color: transparent;
-  margin-right: 300px;
-  margin-top: 50px;
-  position: absolute;
 } 
 
 #header-menu .content ul {
-  float: right;
 }
 
 /* this element is not filled with anything */
@@ -26,8 +21,6 @@
 /* all menu links */
 #header-menu a {
   background-color: #4f4f4f;
-  -moz-border-radius: 5px; /*firefox workaround*/
-  border-radius: 5px;
   border: 1px solid black;
 }
 

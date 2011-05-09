@@ -1,7 +1,7 @@
 <?php
 // $Id: theme-settings.php,v 1.8 2011/01/01 13:20:14 jarek Exp $
 
-function corolla_form_system_theme_settings_alter(&$form, $form_state) {
+function grocerygetter_form_system_theme_settings_alter(&$form, $form_state) {
   // Generate the form using Forms API. http://api.drupal.org/api/7
   $form['custom'] = array(
     '#title' => 'Custom theme settings', 
@@ -53,13 +53,13 @@ function corolla_form_system_theme_settings_alter(&$form, $form_state) {
     '#type' => 'select',
     '#title' => 'Min width', 
     '#default_value' => theme_get_setting('layout_1_min_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['layout_1']['layout_1_max_width'] = array(
     '#type' => 'select',
     '#title' => 'Max width', 
     '#default_value' => theme_get_setting('layout_1_max_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['layout_2'] = array(
     '#title' => '2-column layout', 
@@ -69,13 +69,13 @@ function corolla_form_system_theme_settings_alter(&$form, $form_state) {
     '#type' => 'select',
     '#title' => 'Min width', 
     '#default_value' => theme_get_setting('layout_2_min_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['layout_2']['layout_2_max_width'] = array(
     '#type' => 'select',
     '#title' => 'Max width', 
     '#default_value' => theme_get_setting('layout_2_max_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['layout_3'] = array(
     '#title' => '3-column layout', 
@@ -85,13 +85,13 @@ function corolla_form_system_theme_settings_alter(&$form, $form_state) {
     '#type' => 'select',
     '#title' => 'Min width', 
     '#default_value' => theme_get_setting('layout_3_min_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['layout_3']['layout_3_max_width'] = array(
     '#type' => 'select',
     '#title' => 'Max width', 
     '#default_value' => theme_get_setting('layout_3_max_width'),
-    '#options' => corolla_generate_array(200, 1400, 10, 'px'),
+    '#options' => grocerygetter_generate_array(200, 1400, 10, 'px'),
   );
   $form['custom']['copyright_information'] = array(
     '#title' => 'Copyright information',
@@ -104,7 +104,7 @@ function corolla_form_system_theme_settings_alter(&$form, $form_state) {
   );
 }
 
-function corolla_generate_array($min, $max, $increment, $postfix, $unlimited = NULL) {
+function grocerygetter_generate_array($min, $max, $increment, $postfix, $unlimited = NULL) {
   $array = array();
   if ($unlimited == 'first') {
     $array['none'] = 'Unlimited';

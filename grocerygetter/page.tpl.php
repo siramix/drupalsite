@@ -66,14 +66,6 @@
  * @see template_process()
  */
 ?>
-  <?php if ($page['header_menu']): ?>
-    <div id="header-menu-wrapper">
-      <div id="header-menu">
-        <?php print render($page['header_menu']); ?>
-      </div>
-    </div>
-  <?php endif; ?>
-
   <?php if (!$in_overlay): ?>
   <div id="header-wrapper">
     <div id="header" class="clearfix">
@@ -115,6 +107,15 @@
     </div> <!-- /#header -->
   </div>  <!-- /#header-wrapper -->
   <?php endif; ?>
+  
+  <?php if ($page['header_menu']): ?>
+    <div id="header-menu-wrapper">
+      <div id="header-menu">
+        <?php print render($page['header_menu']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+  
 
   <div id="main-columns-wrapper">
     <div id="main-columns" <?php if ($in_overlay): ?>class="clearfix"<?php endif; ?>>
