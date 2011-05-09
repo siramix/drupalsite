@@ -75,7 +75,10 @@
 
 /*==============
     Misc Content
-================*/
+================*/	
+.page-title {
+  display: none;
+}
 
 /* hide breadcrumbs */
 .breadcrumb {display:none;}
