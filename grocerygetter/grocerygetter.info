@@ -1,10 +1,9 @@
 ; $Id: corolla.info,v 1.23 2011/01/01 13:20:14 jarek Exp $
 
 name        = GroceryGetter
-description = A colorable, fluid width theme, with min and max widths, that can support 1, 2 or 3 columns.
-version     = VERSION
+description = Built off of the Corolla theme, GroceryGetter is a subtheme that falls back to Corolla.
 core        = 7.x
-engine      = phptemplate
+base theme = corolla
 
 features[] = logo
 features[] = name
@@ -14,11 +13,8 @@ features[] = comment_user_picture
 features[] = favicon
 
 ; adding a custom stylesheet for all media
-stylesheets[all][]   = base.css
-stylesheets[all][]   = style.css
-stylesheets[all][]   = colors.css
-stylesheets[print][] = print.css
-stylesheets[all][]   = custom.css
+stylesheets[all][]   = color/colors.css
+stylesheets[all][]   = css/custom.css
 
 regions[header_menu]    = Header menu
 regions[footer_menu]    = Footer menu
