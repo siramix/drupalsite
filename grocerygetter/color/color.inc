@@ -153,7 +153,7 @@ $info = array(
 
   // Images to copy over.
   'copy' => array(
-    '../Corolla/logo.png',
+    '../corolla/logo.png',
   ),
 
   // CSS files (excluding @import) to rewrite with new color scheme.
