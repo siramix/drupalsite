@@ -37,6 +37,11 @@
   color: white;
 }
 
+/* submenu item parent - currently active */
+#header-menu .content ul li.active-trail {
+  background-color: transparent;  
+}
+
 /* submenu item currently active */
 #header-menu .content ul li.expanded.active-trail a.active{
   background-color: #5a7d99;  
@@ -86,6 +91,44 @@
 /*================================================================
 					App Content Styles
 ================================================================*/
+
+/* temp code */
+.appbanner img{
+  margin-top: -27px;
+  margin-left: -15px;
+}
+
+#block-menu-menu-buzzwordssubmenu {
+  margin-top: -25px;
+  margin-left: -10px;
+}
+
+#block-menu-menu-buzzwordssubmenu h2{
+  display: none;
+}
+
+#block-menu-menu-buzzwordssubmenu li{
+  list-style: none;
+  -moz-border-radius: 3px; /*firefox workaround*/
+  border-radius: 3px;
+  border: 1px solid #cfcfcf;
+  float: left;
+  margin: 5px;  
+}
+
+#block-menu-menu-buzzwordssubmenu li a {
+  padding: 7px 15px;
+  display: block;
+}
+
+#block-menu-menu-buzzwordssubmenu li a.active{
+  padding: 7px 15px;
+  display: block;
+  background-color: #efefef;
+}
+
+/* end temp */
+
 #sidebar-first {
 }
 
@@ -101,7 +144,7 @@
   padding-left: 54px;
   min-height: 580px;
   min-width: 300px;
-  margin-left: -20px;
+  margin-left: -33px;
 }
 
 /* -------- Pager ------------ 

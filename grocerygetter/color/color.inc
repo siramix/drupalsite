@@ -153,12 +153,12 @@ $info = array(
 
   // Images to copy over.
   'copy' => array(
-    'logo.png',
+    '../Corolla/logo.png',
   ),
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(
-    'colors.css',
+    'color/colors.css',
   ),
 
   // Gradient definitions.
