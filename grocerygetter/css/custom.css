@@ -23,7 +23,7 @@
 /* all menu links */
 #header-menu a {
   background-color: #4f4f4f;
-  border: 1px solid black;
+  border: 1px solid #3f3f3f;
 }
 
 /* active top level menu item (unexpanded) */
@@ -88,6 +88,10 @@
   text-align: right;
 }
 
+#page {
+  overflow: hidden;
+}
+
 /*================================================================
 					App Content Styles
 ================================================================*/
@@ -95,7 +99,7 @@
 /* temp code */
 .appbanner img{
   margin-top: -27px;
-  margin-left: -15px;
+  margin-left: -10px;
 }
 
 #block-menu-menu-buzzwordssubmenu {
@@ -135,16 +139,22 @@
 /*==============
     Slideshow
 ================*/	
-/*Block for app slideshows.  Shows on app main and sub pages. */
-#views_slideshow_cycle_main_app_slideshow-block_1 {
+
+/* outer block for the slideshow */
+.view-app-slideshow {
   background-image: url('../images/phone_shell.png');
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 57px;
-  padding-left: 54px;
-  min-height: 580px;
-  min-width: 300px;
-  margin-left: -33px;
+  width: 300px;
+  height: 580px;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+/*Block for app slideshows.  Shows on app main and sub pages.*/
+.views_slideshow_cycle_main {
+  padding-top: 55px;
+  padding-left: 27px;
 }
 
 /* -------- Pager ------------ 
@@ -157,18 +167,25 @@ Also see for centering... http://tinyurl.com/66yugf
 
 /* surrounds entire paging widget (outermost block) */
 .views-slideshow-controls-bottom {
-  position: relative;     
-  margin-top: -50px;
+  z-index:10; 
   float: left;
   width: 100%;
+  margin-top: 85px;
+  margin-bottom: 30px;
 }
 
 /* block of pages (2nd outermost block) */
 #widget_pager_bottom_app_slideshow-block_1 { 
-  width: 200px; /*this is needed to flatten the page icons horizontally*/ 
-  
+  width: 200px; /*this is needed to flatten the page icons horizontally*/   
   /*cutting corners, hard codinging position to avoid centering difficulty*/
-  padding-left: 33%;  
+  padding-left: 28%;  
+}
+
+/* block of pages (2nd outermost block) */
+#widget_pager_bottom_app_slideshow-block_2 { 
+  width: 200px; /*this is needed to flatten the page icons horizontally*/   
+  /*cutting corners, hard codinging position to avoid centering difficulty*/
+  padding-left: 30%;  
 }
 
 /* third level block around pages (3rd outermost) */
@@ -203,12 +220,13 @@ http://stackoverflow.com/questions/471510/hide-text-using-css
 /*==============
     QR Code
 ================*/	
-#block-views-qr-code-blocks-block-1 {
+
+.views-field-field-qrcode {
   text-align: center;
-  margin-top: -30px;
 }
 
 .QRCode img{
+  text-align: center;
   padding: 5px;
   background-color: white;
   border:1px solid #e1e1e1;
@@ -217,4 +235,5 @@ http://stackoverflow.com/questions/471510/hide-text-using-css
 }
 
 .QRCaption {
+  text-align: center;
 }
