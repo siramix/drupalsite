@@ -98,8 +98,11 @@ h1.page-title {
 					App Grid Styles
 ================================================================*/
 
+/*==============
+    Gridblock
+================*/	
 .gridblock {
-  margin-top: 
+  margin-top: 10px;
 }
 
 .gridblock  td{
@@ -119,10 +122,17 @@ h1.page-title {
   opacity:0.85;filter:alpha(opacity=85)
 }
 
+/* hides the last cell.  Only necessary while we have only 3 app cells */
+.gridblock .row-last .col-last {
+  border: none;
+}
+
+/* strictly for the More to Come cell */
 .gridblock .row-last .col-3 a {
   cursor: default;
 }
 
+/* strictly for the More to Come cell */
 .gridblock .row-last .col-3 img {
   border: none;
   -moz-border-radius: 0px; /*firefox workaround*/
@@ -130,6 +140,7 @@ h1.page-title {
   opacity:1.0;filter:alpha(opacity=100)
 }
 
+/* remove bottom underline on grid cells */
 .gridblock a {
   border: none;
 }
@@ -247,14 +258,14 @@ http://stackoverflow.com/questions/471510/hide-text-using-css
 */
 .views-content-field-screenshot-order {
   text-indent: -9999px;                 
-  background-image: url('../../../sites/default/files/screenshots/scrollbullet.png');    
+  background-image: url('../images/scrollbullet.png');    
   height: 13px;                       
   width: 13px;    
   cursor: pointer;        
 }
 
 .views-content-field-screenshot-order:hover {
-  background-image: url('../../../sites/default/files/screenshots/scrollbullet_select.png');  
+  background-image: url('../images/scrollbullet_select.png');  
 }
 
 /*==============
