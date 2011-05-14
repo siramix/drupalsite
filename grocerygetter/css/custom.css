@@ -26,18 +26,26 @@
 
 /* active top level menu item (unexpanded) */
 #header-menu a.active {
-  background-color: #5a7d99;
+  background-color: #5a7d99; /*blue*/
 }
 
 /* links under expanded menu (and parent link) */
 #header-menu .content ul li.expanded.active-trail a.active-trail{ 
-  background-color: #7f7f7f;
+  background-color: #5a7d99;
   color: white;
+  font-weight: normal;
 }
 
 /* submenu item parent - currently active */
 #header-menu .content ul li.active-trail {
   background-color: transparent;  
+  color: white;
+}
+
+/* submenu item parent - currently active */
+#header-menu .content ul li.active-trail a.active {
+  background-color: #5a7d99;  
+  color: white;
 }
 
 /* submenu item currently active */
@@ -68,9 +76,9 @@
 }
 
 #header-wrapper {
-  background: #efefef;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#efefef));
-  background: -moz-linear-gradient(top, #fff, #efefef 100%);  
+  background: #fff;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#dfdfdf));
+  background: -moz-linear-gradient(top, #fff, #dfdfdf 100%);  
 }
 
 /*==============
@@ -94,6 +102,9 @@ h1.page-title {
   padding-top: 0px;
 }
 
+.field-name-field-page-images {
+  position: top;
+}
 /*================================================================
 					App Grid Styles
 ================================================================*/
