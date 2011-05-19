@@ -27,6 +27,7 @@
 /* active top level menu item (unexpanded) */
 #header-menu a.active {
   background-color: #5a7d99; /*blue*/
+  font-weight: normal;  
 }
 
 /* links under expanded menu (and parent link) */
@@ -44,8 +45,9 @@
 
 /* submenu item parent - currently active */
 #header-menu .content ul li.active-trail a.active {
-  background-color: #5a7d99;  
+  background-color: #5a7d99; /*blue*/
   color: white;
+  font-weight: normal;  
 }
 
 /* submenu item currently active */
@@ -85,6 +87,9 @@
     Misc Content
 ================*/	
 
+/* hide rss */
+.feed-icon {display:none;}
+
 /* hide breadcrumbs */
 .breadcrumb {display:none;}
 
@@ -94,6 +99,7 @@ h1.page-title {
 
 /* when content has watermark put it on right side */
 .field-name-field-watermark {
+  margin-top: 50px;
   text-align: right;
 }
 
@@ -112,8 +118,12 @@ h1.page-title {
 /*==============
     Gridblock
 ================*/	
+#block-views-app-grid-block h2 {
+  padding: 5px 0px 5px 5px; 
+}
+
 .gridblock {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .gridblock  td{
@@ -159,11 +169,13 @@ h1.page-title {
 					App Main/Sub Content Styles
 ================================================================*/
 
-/* temp code */
 .appbanner img {
   margin-left: -10px;
 }
 
+/*==============
+    Buzzwords Submenu
+================*/	
 #block-menu-menu-buzzwordssubmenu {
   margin-top: -25px;
   margin-left: -10px;
@@ -193,21 +205,16 @@ h1.page-title {
   background-color: #efefef;
 }
 
-/* end temp */
-
-#sidebar-first {
-}
-
 /*==============
     Slideshow
 ================*/	
 
 /* outer block for the slideshow */
 .view-app-slideshow {
-  background-image: url('../images/phone_shell.png');
+  background-image: url('../images/phone_shell.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  width: 300px;
+  width: 294px;
   height: 580px;
   margin-top: 5px;
   margin-left: -5px;
@@ -215,8 +222,8 @@ h1.page-title {
 
 /*Block for app slideshows.  Shows on app main and sub pages.*/
 .views_slideshow_cycle_main {
-  padding-top: 55px;
-  padding-left: 27px;
+  padding-top: 64px;
+  padding-left: 25px;
 }
 
 /* -------- Pager ------------ 
@@ -240,7 +247,7 @@ Also see for centering... http://tinyurl.com/66yugf
 #widget_pager_bottom_app_slideshow-block_1 { 
   width: 200px; /*this is needed to flatten the page icons horizontally*/   
   /*cutting corners, hard codinging position to avoid centering difficulty*/
-  padding-left: 28%;  
+  padding-left: 24%;  
 }
 
 /* block of pages (2nd outermost block) */
