@@ -30,6 +30,11 @@
   font-weight: normal;  
 }
 
+/* parent menu tab of a list of an expanded list of links */
+#header-menu .content ul li.expanded {
+  margin-right: -10px; /* brings expanded tabs width down a bit */
+}
+
 /* links under expanded menu (and parent link) */
 #header-menu .content ul li.expanded.active-trail a.active-trail{ 
   background-color: #5a7d99;
