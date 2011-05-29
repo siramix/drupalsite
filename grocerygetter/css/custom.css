@@ -108,6 +108,7 @@ h1.page-title {
   text-align: right;
 }
 
+/* prevent images from hanging over the main page content */
 #page {
   overflow: hidden;
   padding-top: 0px;
@@ -116,6 +117,24 @@ h1.page-title {
 .field-name-field-page-images {
   position: top;
 }
+
+/* position tweet this button */
+.twitter-share-button {
+  float: right;
+}
+
+/*==============
+    Contact Us Sidebar
+================*/	
+#contactblock {
+  padding-left: 23px;
+  padding-bottom: 10px;
+  background-color: white;
+  border:1px solid #e1e1e1;
+  -moz-border-radius: 5px; /*firefox workaround*/
+  border-radius: 5px;
+}
+
 /*================================================================
 					App Grid Styles
 ================================================================*/
@@ -188,7 +207,7 @@ h1.page-title {
   list-style: none;
   -moz-border-radius: 3px; /*firefox workaround*/
   border-radius: 3px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #afafaf;
   float: left;
   margin: 5px;  
 }
@@ -201,7 +220,7 @@ h1.page-title {
 #block-menu-menu-buzzwordssubmenu li a.active{
   padding: 7px 15px;
   display: block;
-  background-color: #efefef;
+  background-color: #ededed;
 }
 
 /*==============
